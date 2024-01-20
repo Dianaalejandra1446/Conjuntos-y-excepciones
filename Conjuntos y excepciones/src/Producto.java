@@ -83,8 +83,11 @@ public class Producto {
         leer.close();
     }
 
-    public void AgregarProductos(Producto producto) {
-        productos.add(producto);
+    public void AgregarProductos() {
+        Producto producto1 = new Producto(precio, numeroReferencia, cantidad);
+        productos.add(producto1);
+
+        
     }
 
     public void restarProductos(Producto producto) {
